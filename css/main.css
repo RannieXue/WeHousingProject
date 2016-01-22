@@ -1,0 +1,45 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.pageholder {
+	background-color: #DCDCDC;
+	margin: 5%;
+}
+
+.priceholder {
+	height: 100px;
+	width: 100%;
+}
+
+.price {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: 	#DAA520;
+	vertical-align: bottom;
+}
+
+.pricenumber {
+	font-size: 25px;
+}
+
+.currency {
+	text-align: right;
+	font-size: 12px;
+}
+
+.descholder {
+	height: 120px;
+	width: 100%;
+}
