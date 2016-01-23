@@ -144,3 +144,23 @@ document.getElementById("apt11Desc").innerHTML= data.apartments[10].description;
 document.getElementById("apt12Name").innerHTML= data.apartments[11].name;
 document.getElementById("apt12Price").innerHTML= data.apartments[11].price;
 document.getElementById("apt12Desc").innerHTML= data.apartments[11].description;
+
+
+$('.sort-table').click(function(e) {
+    var $sort = this;
+    var $table = $('#sort-table');
+    var $rows = $('tbody > tr',$table);
+    $rows.sort(function(a, b){
+        var keyA = $('td',a).text();
+        var keyB = $('td',b).text();
+        if($($sort).hasClass('asc')){
+            return (keyA > keyB) ? 1 : 0;
+        } else {
+            return (keyA > keyB) ? 1 : 0;
+        }
+    });
+    $.each($rows, function(index, row){
+      $table.append(row);
+    });
+    e.preventDefault();
+});
